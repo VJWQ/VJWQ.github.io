@@ -1,0 +1,108 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>4D Human Body Capture from Egocentric Video via 3D Scene Grounding</title>
+<meta name="generator" content="Nested http://nestededitor.sourceforge.net/">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    menuSettings: {zoom: "Double-Click", zscale: "300%"},
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+    MathMenu: {showRenderer: false},
+    "HTML-CSS": {
+        availableFonts: ["TeX"],
+        preferredFont: "TeX",
+        imageFont: null
+    }
+  });
+</script>
+<style type="text/css">
+    body { background-color: White; font-family: Helvetica, Futura, "Trebuchet MS", sans-serif; width:900px; margin:0 auto;}
+    h1 { color: black; font-family:  Helvetica, Futura, "Trebuchet MS", sans-serif; font-size: 27px; }
+    h2 { color: black; font-family:  Helvetica, Futura, "Trebuchet MS", sans-serif; font-size: 22px}
+    h4 { color: black; font-family:  Helvetica, Futura, "Trebuchet MS", sans-serif; font-size: 15px; font-weight:normal}
+    p { color: black; font-family: Helvetica, Futura, "Trebuchet MS", sans-serif;}
+</style>
+</head>
+
+
+<body><div id="header" class="header" align="center">
+<h1>4D Human Body Capture from Egocentric Video  <br />via 3D Scene Grounding</h1>
+
+<table style="width:100%">
+  <tbody><tr>
+    <td style="text-align:center"><font size="4"><a href="https://aptx4869lm.github.io/">Miao Liu</a><sup>1</sup> </font></td>
+    <td style="text-align:center"><font size="4">Dexin Yang</font><sup>2</sup> </td>
+    <td style="text-align:center"><font size="4"><a href="https://yz-cnsdqz.github.io">Yan Zhang</a><sup>2</sup> </td>    
+    <td style="text-align:center"><font size="4"><a href="https://zhpcui.github.io">Zhaopeng Cui</a><sup>3</sup> </td>
+    <td style="text-align:center"><font size="4"><a href="https://rehg.org/">James M. Rehg</a><sup>1</sup></td>
+    <td style="text-align:center"><font size="4"><a href="https://vlg.inf.ethz.ch/people.html">Siyu Tang</a><sup>2</sup></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="text-align:center"><sup>1</sup>Georgia Tech</td> 
+    <td style="text-align:center"><sup>2</sup>ETH Z<sann>&#252</span>rich</td>
+    <td style="text-align:center"><sup>3</sup>Zhejiang University</td>
+  </tr>
+</tbody></table>
+
+<p>
+  <!-- <a href="??" style="font-size: 24px;">[code]</a> -->
+  <a href="https://github.com/aptx4869lm/4DCapture-FPV.git" style="font-size: 24px;"> [code]</a> 
+  <a href="https://arxiv.org/pdf/2011.13341.pdf" style="font-size: 24px;">[arxiv]</a> 
+</p>
+
+
+</div>
+
+<div style="text-align: center;">
+  <img src="teaser.png"  style="width:800px;height:270px;">
+</div>
+
+<h4>
+ We seek to reconstruct 4D second-person human body meshes that are grounded on the 3D scene captured in an egocentric view. Our method exploits 2D observations from the entire video sequence and the 3D scene context to optimize human body models over time, and thereby leads to more accurate human motion capture and more realistic human-scene interaction.
+</h4>
+
+<h2>Abstract</h2>
+To understand human daily social interaction from egocentric perspective, we introduce a novel task of reconstructing a time series of second-person 3D human body meshes from monocular egocentric videos. The unique viewpoint and rapid embodied camera motion of egocentric videos raise additional technical barriers for human body capture. To address those challenges, we propose a novel optimization-based approach that leverages 2D observations of the entire video sequence and human-scene interaction constraint to estimate second-person human poses, shapes and global motion that are grounded on the 3D environment captured from the egocentric view. We conduct detailed ablation studies to validate our design choice. Moreover, we compare our method with previous state-of-the-art method on human motion capture from monocular video, and show that our method estimates more accurate human-body poses and shapes under the challenging egocentric setting. In addition, we demonstrate that our approach produces more realistic human-scene interaction.
+<br>
+
+<hr class="heavy">
+<br>
+
+</div>
+<div style="text-align: center;">
+  <img src="overview.png"  style="width:800px;height:192px;">
+</div>
+<h2>Method</h2>
+We introduce an optimization-based method that makes use of human-scene constraints and temporalhuman dynamic prior to reconstruct time series of 4D human body poses and shapes that grounded on the 3D environment.  Our methodthereby addresses challenging cases where human body is partially observable (middle figure on the left) and encourages more realistichuman-scene interaction (figure on the right).
+<br>
+
+<hr class="heavy">
+
+<div style="text-align: center;">
+<h2>Video Demo</h2>
+<video controls="controls" width="640">
+  <source src="Demo.mp4" type="video/mp4">
+</video>
+</div>
+<hr class="heavy">
+
+<!-- <h2 id="bibtex">Cite</h2> -->
+
+<!-- If you find this work useful in your own research, please consider citing:
+<pre>
+@inproceedings{liu2019forecasting,
+  title={Forecasting human object interaction: Joint prediction of motor attention and actions in First Person Video},
+  author={Liu, Miao and Tang, Siyu and Li, Yin and Rehg, James},
+  booktitle={ECCV},
+  year={2020}
+}
+</pre> -->
+
+<h2 id="Contact">Contact</h2>
+For questions about paper, please contact mliu328 at gatech dot edu
+<br>
+</body></html>
