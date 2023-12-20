@@ -1,0 +1,235 @@
+"use strict"
+!function(t,e){const n="/data/flags",i="https://flagcdn.com",o=["afAfghanistan","axÅland Islands","alAlbania","dzAlgeria","asAmerican Samoa","adAndorra","aoAngola","aiAnguilla","aqAntarctica","agAntigua and Barbuda","arArgentina","amArmenia","awAruba","auAustralia","atAustria","azAzerbaijan","bsBahamas","bhBahrain","bdBangladesh","bbBarbados","byBelarus","beBelgium","bzBelize","bjBenin","bmBermuda","btBhutan","boBolivia","baBosnia and Herzegovina","bwBotswana","bvBouvet Island","brBrazil","ioBritish Indian Ocean Territory","bnBrunei","bgBulgaria","bfBurkina Faso","biBurundi","khCambodia","cmCameroon","caCanada","cvCape Verde","bqCaribbean Netherlands","kyCayman Islands","cfCentral African Republic","tdChad","clChile","cnChina","cxChristmas Island","ccCocos Islands","coColombia","kmComoros","cgRepublic of the Congo","cdDR Congo","ckCook Islands","crCosta Rica","ciCôte d'Ivoire","hrCroatia","cuCuba","cwCuraçao","cyCyprus","czCzechia","dkDenmark","djDjibouti","dmDominica","doDominican Republic","ecEcuador","egEgypt","svEl Salvador","gb-engEngland","gqEquatorial Guinea","erEritrea","eeEstonia","szEswatini","etEthiopia","fkFalkland Islands","foFaroe Islands","fjFiji","fiFinland","frFrance","gfFrench Guiana","pfFrench Polynesia","tfFrench Southern and Antarctic Lands","gaGabon","gmGambia","geGeorgia","deGermany","ghGhana","giGibraltar","grGreece","glGreenland","gdGrenada","gpGuadeloupe","guGuam","gtGuatemala","ggGuernsey","gnGuinea","gwGuinea-Bissau","gyGuyana","htHaiti","hmHeard Island and McDonald Islands","hnHonduras","hkHong Kong","huHungary","isIceland","inIndia","idIndonesia","irIran","iqIraq","ieIreland","imIsle of Man","ilIsrael","itItaly","jmJamaica","jpJapan","jeJersey","joJordan","kzKazakhstan","keKenya","kiKiribati","kpNorth Korea","krSouth Korea","xkKosovo","kwKuwait","kgKyrgyzstan","laLaos","lvLatvia","lbLebanon","lsLesotho","lrLiberia","lyLibya","liLiechtenstein","ltLithuania","luLuxembourg","moMacau","mgMadagascar","mwMalawi","myMalaysia","mvMaldives","mlMali","mtMalta","mhMarshall Islands","mqMartinique","mrMauritania","muMauritius","ytMayotte","mxMexico","fmMicronesia","mdMoldova","mcMonaco","mnMongolia","meMontenegro","msMontserrat","maMorocco","mzMozambique","mmMyanmar","naNamibia","nrNauru","npNepal","nlNetherlands","ncNew Caledonia","nzNew Zealand","niNicaragua","neNiger","ngNigeria","nuNiue","nfNorfolk Island","mkNorth Macedonia","gb-nirNorthern Ireland","mpNorthern Mariana Islands","noNorway","omOman","pkPakistan","pwPalau","psPalestine","paPanama","pgPapua New Guinea","pyParaguay","pePeru","phPhilippines","pnPitcairn Islands","plPoland","ptPortugal","prPuerto Rico","qaQatar","reRéunion","roRomania","ruRussia","rwRwanda","blSaint Barthélemy","shSaint Helena, Ascension and Tristan da Cunha","knSaint Kitts and Nevis","lcSaint Lucia","mfSaint Martin","pmSaint Pierre and Miquelon","vcSaint Vincent and the Grenadines","wsSamoa","smSan Marino","stSão Tomé and Príncipe","saSaudi Arabia","gb-sctScotland","snSenegal","rsSerbia","scSeychelles","slSierra Leone","sgSingapore","sxSint Maarten","skSlovakia","siSlovenia","sbSolomon Islands","soSomalia","zaSouth Africa","gsSouth Georgia","ssSouth Sudan","esSpain","lkSri Lanka","sdSudan","srSuriname","sjSvalbard and Jan Mayen","seSweden","chSwitzerland","sySyria","twTaiwan","tjTajikistan","tzTanzania","thThailand","tlTimor-Leste","tgTogo","tkTokelau","toTonga","ttTrinidad and Tobago","tnTunisia","trTurkey","tmTurkmenistan","tcTurks and Caicos Islands","tvTuvalu","ugUganda","uaUkraine","aeUnited Arab Emirates","gbUnited Kingdom","usUnited States","umUnited States Minor Outlying Islands","uyUruguay","uzUzbekistan","vuVanuatu","vaVatican City","veVenezuela","vnVietnam","vgBritish Virgin Islands","viUnited States Virgin Islands","gb-wlsWales","wfWallis and Futuna","ehWestern Sahara","yeYemen","zmZambia","zwZimbabwe"],s={"no":{"bv":1,"sj":1},"bv":{"no":1,"sj":1},"sj":{"no":1,"bv":1},"au":{"hm":1},"hm":{"au":1},"fr":{"mf":1},"mf":{"fr":1},"us":{"um":1},"um":{"us":1}},c={"c-flags.sort.label":"View","c-flags.sort.column-flag":"Flag","c-flags.sort.column-country":"Country","c-flags.sort.column-population":"Population","c-flags.sort.column-area":"Total area","c-flags.sort.name-asc-grid":"by name, just flags","c-flags.sort.name-asc-table":"by name with basic information","c-flags.sort.population-desc-table":"by the most populous","c-flags.sort.population-asc-table":"by the least populous","c-flags.sort.area-desc-table":"by largest","c-flags.sort.area-asc-table":"by smallest"}
+function a(t,e){return t.querySelector(e)}function r(t,e,n){const i=t.querySelectorAll(e)
+return i.forEach(n),i}function l(){return"IntersectionObserver"in t&&"IntersectionObserverEntry"in t&&"isIntersecting"in t.IntersectionObserverEntry.prototype}function d(t){return e.createElement(t)}function u(t){return e.getElementById(t)}function p(t,n){const i=e.querySelectorAll(t)
+return void 0!==n&&i.forEach(n),i}function f(t,e){t.appendChild(e)}function g(t){e.body.appendChild(t)}function h(t){t.style.display="block"}function m(t){t.style.display="none"}function b(t,e){t.innerHTML=e}function v(t,e){t.textContent=e}function y(t){let e,n,i=t.length
+for(;--i;)n=Math.floor(Math.random()*(i+1)),e=t[n],t[n]=t[i],t[i]=e}function w(t){const e=d("script")
+e.src=t,g(e)}function L(t){return void 0===c[t]?t:c[t]}function E(t){const e="-"===t.substring(2,3)?6:2
+return{o:t,c:t.substring(0,e),n:t.substring(e)}}function C(t,e){t.addEventListener("click",e)}let $
+function k(){var n,i,o
+p("[data-event]",(function(t){t.getAttribute("data-event").split(","),t.onclick=function(){}})),p("#form-test",(function(t){t.querySelectorAll("input").forEach((function(t){t.value="flaglovers"})),t.style.display="none"})),n=e.body.classList,i=u("header"),e.addEventListener("click",(function(t){n.contains("nav-open")&&!i.contains(t.target)&&n.remove("nav-open")})),function(t,n){let i=!1
+function o(){i||(w("/asset-search.js?b7587737"),i=!0)}t.contains(n+"-open")&&o(),u(n+"-toggler").addEventListener("click",o),u(n).addEventListener("click",(function(e){e.target===this&&t.remove(n+"-open")})),e.addEventListener("keyup",(function(e){27==e.keyCode?t.remove(n+"-open"):70==e.keyCode&&"INPUT"!=e.target.tagName&&"TEXTAREA"!=e.target.tagName&&u(n+"-toggler").click()}))}(e.body.classList,"search"),function(t,n,i){if(t||function(t){$=$||e.cookie
+const n=$.match("(^|[^;]+)\\s*"+t+"\\s*=\\s*([^;]+)")
+return n?n.pop():""}("ccb"))return
+const o=d("div")
+o.id="cookies-alert",v(o,t)
+const s=d("button")
+v(s,"OK"),s.onclick=function(){m(o),function(t,n,i){const o=new Date
+o.setTime(o.getTime()+1e3*(i||31536e3)),e.cookie=t+"="+n+"; expires="+o.toUTCString()+"; path=/"}("ccb","1")},o.appendChild(s),g(o)}("We use cookies to analyze traffic and ads."),p("."+(o="next-element-")+"toggle",(function(t){const e=t.classList,n=t.nextElementSibling.classList
+n.contains(o+"hidden")||n.add(o+"hidden"),e.add("a"),t.addEventListener("click",(function(){n.toggle("next-element-hidden-show"),e.toggle(o+"toggled")}))})),p("[data-clipboard]",(function(n){n.addEventListener("click",(function(){const i=d("textarea")
+if(i.setAttribute("style","font-size:16px;width:1px;height:1px;"),this.parentNode.insertBefore(i,this.nextSibling),i.value=this.getAttribute("data-clipboard"),i.focus(),navigator.userAgent.match(/ipad|ipod|iphone/i)){i.contentEditable=!0,i.readOnly=!1
+const n=e.createRange()
+n.selectNodeContents(i)
+const o=t.getSelection()
+o.removeAllRanges(),o.addRange(n),i.setSelectionRange(0,999999)}else i.select()
+e.execCommand("copy"),this.parentNode.removeChild(i),n.classList.contains("copied")||(n.classList.add("copied"),setTimeout((function(){n.classList.remove("copied")}),1500))}))})),function(t,e){const n=function(t,e){let n=t.getHours()
+return n+=":",t.getMinutes()<10&&(n+="0"),n+=t.getMinutes(),e&&(n+=":",t.getSeconds()<10&&(n+="0"),n+=t.getSeconds()),n}
+p("["+t+"utc]",(function(i){const o=new Date(i.getAttribute(t+"utc")+" UTC")
+let s=""
+switch(i.getAttribute(t+"format")){case e:s+=o.getDate()+". "+(o.getMonth()+1)+". "+o.getFullYear()+", ",s+=n(o,!1)
+break
+case e+"-short":s+=o.getDate()+". "+(o.getMonth()+1)+"., ",s+=n(o,!1)
+break
+default:s+=n(o,!0)}v(i,s)}))}("data-time-","datetime")}function S(){const t=(s="js-download",e.getElementById(s))
+var s
+if(!t||!t.dataset.code)return
+let c=t.dataset.code,l=t.dataset.name
+function u(t,e){return t||(t=".."),e||(e=".."),`${t}×${e} px`}function p(t,e){let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,i=`${"&nbsp;".repeat(n)}&lt;<span class="code-tag">${t}</span>`
+if(e)for(let t in e){const o="string"==typeof e[t]?e[t].replace(/\n/g,"<br />"+"&nbsp;".repeat(2*(n+1)+2)):e[t]
+o&&(i+=`<br />${"&nbsp;".repeat(2*(n+1))}<span class="code-attr">${t}</span>=&quot;<span class="code-value">${o}</span>&quot;`)}return i+="&gt;",i}function g(t,e,n){const o=[],s=[]
+t.forEach((function(t){const e=`${i}/${t.cdn}/<em>${c}</em>.%s`+(t.density>1?` ${t.density}x`:"")
+o.push(e.replace("%s","webp"==n?"png":n)),s.push(e.replace("%s","webp"))}))
+let a,r=d("code")
+if("webp"!=n)a=p("img",{src:`${i}/${e.cdn}/<em>${c}</em>.${n}`,srcset:o.slice(1).join(",\n"),width:e.width,height:e.height,alt:`<em>${l}</em>`})
+else{const t=p("source",{type:"image/webp",srcset:s.join(",\n")},1),n=p("source",{type:"image/png",srcset:o.join(",\n")},1),r=p("img",{src:`${i}/${e.cdn}/<em>${c}</em>.png`,width:e.width,height:e.height,alt:`<em>${l}</em>`},1)
+a=p("picture")+"<br />&nbsp;"+t+"<br />&nbsp;"+n+"<br />&nbsp;"+r+"<br />"+p("/picture")}return b(r,a),r}function h(){r(t,".sizes button:first-child",(function(t){t.click()}))}r(t,".preview",(function(i){const s=a(i,"em"),u=a(i,"button")
+let p=null
+function f(e,i,o){const a=d("button")
+a.title=i,a.dataset.code=e,b(a,function(t,e){let i=n
+"us-"==t.substring(0,3)&&(i=i.replace("/data/flags","/data/us"),t=t.substring(3))
+const o=e/4*3
+function s(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:1
+return`${i}/icon/${e*t}x${o*t}`}function c(t,e){let n=""
+for(let i=1;i<=3;i++)n&&(n+=", "),n+=`${s(i)}/${t}.${e}`+(i>1?` ${i}x`:"")
+return n}return`<picture><source type="image/webp" srcset="${c(t,"webp")}"><source type="image/png" srcset="${c(t,"png")}"><img src="${s()}/${t}.png" width="${e}" height="${o}" alt=""></picture>`}(e,28)),C(a,(function(){v(s,i),r(t,".example picture, .types picture",(function(t){let n=e,i=t.innerHTML.replace(new RegExp("/data/us/","g"),"/data/flags/")
+o&&(n=n.substring(3),i=i.replace(new RegExp("/data/flags/","g"),"/data/us/")),b(t,i.replace(new RegExp("/[a-z]{2}(-[a-z]{2,3})?\\.","g"),"/"+n+".").replace(/width="\d+"/g,""))})),c=e,l=i,r(t,".item > .options .selected",(function(t){t.click()})),r(t,"[data-preview-code]",(function(t){v(t,e)})),r(t,"[data-preview-name]",(function(t){v(t,i)})),h()})),p.appendChild(a)}C(u,(function(){i.classList.toggle("on"),i.classList.contains("on")&&!p&&(p=d("div"),o.forEach((function(t){const e=E(t)
+f(e.c,e.n,!1)})),i.dataset.us&&JSON.parse(i.dataset.us).forEach((function(t){f("us-"+t.substring(0,2),t.substring(2),!0)})),i.appendChild(p))})),C(e,(function(t){i.classList.contains("on")&&!u.contains(t.target)&&i.classList.remove("on")}))})),r(t,"[data-group-target]",(function(e){C(e,(function(){r(t,`[data-group-target=${e.dataset.groupTarget}]`,(function(t){t.classList.remove("selected")})),e.classList.add("selected"),r(t,`[data-group=${e.dataset.groupTarget}]`,(function(t){t.dataset.item==e.dataset.itemTarget?t.classList.remove("hidden"):t.classList.add("hidden")})),h()}))})),r(t,".sizes",(function(e){const n=e.dataset.previewTarget,i=e.dataset.previewFormatTarget,o=r(e,"button",(function(e){C(e,(function(){o.forEach((function(t){t.classList.remove("selected")})),e.classList.add("selected")
+const s=JSON.parse(e.dataset.densities),c=s[0]
+r(t,`[data-preview-size=${n}]`,(function(t){v(t,c.cdn)})),r(t,`[data-preview-html=${n}]`,(function(t){b(t,""),t.appendChild(g(s,c,i))}))}))}))})),r(t,".item",(function(t){const n=a(t,".options")
+if(!n)return
+let o,s
+function p(t){o=JSON.parse(t.dataset.densities),s=o[0]}p(a(t,".option.selected"))
+const h=r(n,".option",(function(e){C(e,(function(i){p(e)
+const a=n.parentNode.querySelector(".example-fixed")
+s.width>192?a.classList.add("example-fixed-wider"):a.classList.remove("example-fixed-wider"),function(t,e,n){const i=t.querySelector(e)
+i&&n(i)}(t,".btn span",(function(t){v(t,u(s.width,s.height))})),r(a,"source, img",(function(t){const e=c.replace("us-","")
+if("IMG"==t.tagName)t.src=`${s.dir}/${e}.png`,s.width?t.width=s.width:t.removeAttribute("width"),s.height?t.height=s.height:t.removeAttribute("height")
+else{const n="image/png"==t.type?"png":"webp"
+let i=""
+o.forEach((function(t){i&&(i+=", "),i+=`${t.dir}/${e}.${n}`+(t.density>1?` ${t.density}x`:"")})),t.srcset=i}})),h.forEach((function(t){t.classList.remove("selected")})),e.classList.add("selected")}))}))
+r(t,".btn",(function(t){const n=d("div")
+var a,p
+n.className="archives",p=n,(a=t).parentNode.insertBefore(p,a.nextSibling),C(t,(function(e){if(e.preventDefault(),n.classList.toggle("on"),!n.classList.contains("on"))return
+b(n,"")
+const a=d("div")
+a.className="switchers",f(n,a),["PNG","WebP"].forEach((function(e){const p="PNG"==e?"":"-"+e.toLowerCase(),h="PNG"==e,m=d("button")
+v(m,e)
+const y=d("div")
+y.classList.add("format"),h?m.classList.add("selected"):y.classList.add("hidden")
+let w=""
+var L
+o.forEach((function(n){let o=t.dataset.single?`${i}/${n.cdn}/${c}.${e.toLowerCase()}`:`${i}/${n.cdn}${p}.zip`
+w+=`<tr><td>${e}</td><td>${n.density}× density</td><td>${u(n.width,n.height)}</td><td><a href="${o}">download</a></td></tr>`})),b(y,"<strong>Download</strong><table>"+w+"</table>"),L="<strong>Embed via our free and fast Content Delivery Network</strong>",y.innerHTML+=L,y.appendChild(g(o,s,h?"png":"webp"))
+const E=d("small")
+b(E,'For other flags just replace <em>%s</em> with other <a href="https://flagcdn.com/en/codes.json" target="_blank">ISO 3166 country codes</a>.'.replace("%s",c).replace("%s",l)),y.appendChild(E),f(n,y),C(m,(function(){r(n,"button",(function(t){t.classList.remove("selected")})),m.classList.add("selected"),r(n,".format",(function(t){t.classList.add("hidden")})),y.classList.remove("hidden")})),f(a,m)}))})),C(e,(function(e){!n.classList.contains("on")||t.contains(e.target)||n.contains(e.target)||n.classList.remove("on")}))}))}))}function x(){p(".flag-tools",(function(n){const i=n.nextElementSibling
+if(!i||"flag-grid"!==i.className)return void n.querySelectorAll("li").forEach((function(t){e.addEventListener("click",(function(e){t.classList.contains("on")&&!t.contains(e.target)&&t.classList.remove("on")}))}))
+let o=null,s=null,c=[],a={},r={sort:[function(t){if("grid"===t.view){if(!o)return
+m(o),i.style.display="grid","replaceState"in history&&history.replaceState(null,null," ")}else{o||function(){const t=function(){const t=d("table")
+t.className="flag-table"
+const e=d("thead")
+return t.appendChild(e),[["number","#",null,"table"],["flag","flag","name","grid"],["country sortable","country","name","table"],["value v-population sortable","population","population","table"],["value v-area sortable","area","area","table"]].forEach((function(t){const n=d("th")
+n.scope="col",n.className=t[0]
+const i=d("button")
+v(i,"#"===t[1]?"#":L("c-flags.sort.column-"+t[1])),n.appendChild(i),e.appendChild(n)
+const s=t[2],r=t[3]
+p("sort",(function(t){n.classList.remove("asc"),n.classList.remove("desc"),t.attribute===s&&n.classList.add(t.direction)})),i.addEventListener("click",(function(){s||(o.classList.contains("reverse")?(o.classList.remove("reverse"),o.style.counterReset="table-counter 0"):(o.classList.add("reverse"),o.style.counterReset="table-counter "+(c.length+1)))
+let t={attribute:s||a.sort.attribute,direction:"asc",view:r}
+l("sort",t)&&(t.direction="desc"),u("sort",t)}))})),t}()
+s=d("tbody"),t.appendChild(s)
+let e=0
+i.querySelectorAll("a").forEach((function(t){const n=t.getAttribute("data-population"),i=t.getAttribute("data-area"),o=/(<a[^>]+>)([\s\S]*<img[^>]+>)([\s\S]*<\/span>)([\s\S]*<\/a>)/m,s=d("tr"),a=d("td")
+a.className="number",s.appendChild(a)
+const r=d("td")
+r.className="flag",r.innerHTML=t.outerHTML.replace(o,"$1$2$4").replace(/h160/g,"icon/72x54").replace(/h80/g,"icon/36x27").replace(/width="\d+"/g,'width="36"').replace(/height="\d+"/g,'height="27"'),s.appendChild(r)
+const l=d("td")
+l.className="country",l.innerHTML=t.outerHTML.replace(o,"$1$3$4"),s.appendChild(l)
+const u=d("td")
+u.className="value v-population",v(u,n.replace(/\B(?=(\d{3})+(?!\d))/g," ")),s.appendChild(u)
+const p=d("td")
+p.className="value v-area",v(p,i.replace(/\B(?=(\d{3})+(?!\d))/g," ")+" km")
+const f=d("sup")
+v(f,2),p.appendChild(f),s.appendChild(p),c.push({name:e++,population:parseInt(n),area:parseInt(i),el:s})})),p("sort",(function(e){"name"!=e.attribute?(t.classList.remove("w-population"),t.classList.remove("w-area"),t.classList.add("w-"+e.attribute)):-1==t.className.indexOf("w-")&&t.classList.add("w-population")})),o=t,i.parentNode.insertBefore(o,i)}(),m(i),o.style.display="table"
+const e=t.attribute
+c.sort((function(n,i){return(n[e]<i[e]?-1:n[e]>i[e]?1:0)*("asc"!=t.direction?-1:1)}))
+for(let t=0;t<c.length;t++)s.appendChild(c[t].el)
+"replaceState"in history&&history.replaceState(null,null,"#t")}}],color:[function(t){i.style.background=t}]}
+function l(t,e){if(void 0===a[t])return!1
+for(const n in a[t])if(void 0!==e[n]&&e[n]!==a[t][n])return!1
+return!0}function u(t,e,n){const i=JSON.stringify(e),o=a[t]?JSON.parse(JSON.stringify(a[t])):null
+a[t]=JSON.parse(i)
+for(let n=0;n<r[t].length;n++)r[t][n](e,o)}function p(t,e){r[t].push(e)}[{key:"sort",options:[["name-asc-grid",{attribute:"name",direction:"asc",view:"grid"}],["name-asc-table",{attribute:"name",direction:"asc",view:"table"}],["population-desc-table",{attribute:"population",direction:"desc",view:"table"},1],["population-asc-table",{attribute:"population",direction:"asc",view:"table"}],["area-desc-table",{attribute:"area",direction:"desc",view:"table"},1],["area-asc-table",{attribute:"area",direction:"asc",view:"table"}]]}].forEach((function(t){const i=d("li"),o=function(){const n=d("button")
+i.appendChild(n),n.addEventListener("click",(function(){i.classList.toggle("on")})),e.addEventListener("click",(function(t){i.classList.contains("on")&&!i.contains(t.target)&&i.classList.remove("on")}))
+const o=d("span")
+v(o,L("c-flags."+t.key+".label")),n.appendChild(o)
+const s=d("strong")
+return n.appendChild(s),s}(),s=d("ul")
+t.options.forEach((function(e,n){const c=d("li"),a=e[1],r=L("c-flags."+t.key+"."+e[0])
+v(c,r),n||v(o,r),void 0!==e[2]&&(c.className="delimiter"),p(t.key,(function(){l(t.key,a)&&v(o,r),i.classList.remove("on")})),c.addEventListener("click",(function(){u(t.key,a)})),s.appendChild(c)})),i.appendChild(s),n.appendChild(i)})),"#t"===t.location.hash&&u("sort",{attribute:"name",direction:"asc",view:"table"})}))}function N(e,n){if("function"!=typeof fetch)return
+const i=new Request("/e",{method:"POST",headers:{Accept:"application/json","X-Requested-With":"XMLHttpRequest"},body:JSON.stringify([e,n,t.location.href])})
+fetch(i).then((t=>{}))}function T(){const n="adsbygoogle",i="adsbygoogle-lazy"
+function o(e){e.classList.remove(i),e.classList.add(n),(t.adsbygoogle=t.adsbygoogle||[]).push({})}let s=!1
+function c(){if(!s){const t=e.createElement("div")
+t.style.display="none",e.body.appendChild(t),s=!0,w("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9356627658540659")
+let n=!1
+new MutationObserver(((i,o)=>{const s=e.querySelector("body > .google-revocation-link-placeholder")
+if(!s)return
+if(t.append(s),n)return
+n=!0
+let c=null
+s.querySelectorAll("*").forEach((t=>{if(t.children.length)return
+const n=t.innerText
+if(n)if(c){const t=e.createElement("div")
+t.innerText=n,c.appendChild(t)}else{const i=e.createElement("button")
+i.innerText=n,i.addEventListener("click",(e=>{"object"==typeof googlefc?googlefc.callbackQueue.push(googlefc.showRevocationMessage):t.click()})),c=e.createElement("div"),c.className="footer__consent",c.appendChild(i)}})),c&&e.querySelector(".footer").appendChild(c)})).observe(e.body,{childList:!0,subtree:!1})}}setTimeout(c,3500),e.querySelectorAll(`.${n}`).forEach((function(t){t.classList.remove(n),t.classList.add(i)}))
+const a=e.querySelectorAll(`.${i}`)
+if(l()){const t=new IntersectionObserver((function(e){e.forEach((function(e){if(e.isIntersecting){const n=e.target
+o(n),t.unobserve(n),c()}}))}))
+a.forEach((function(e){t.observe(e)}))}else a.forEach((function(t){o(t)})),c()
+const r=e.querySelector(".frklm")
+if(r){let n=!1
+const i=e=>{n||(n=!0,r.innerHTML='<div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9356627658540659" data-ad-slot="9383587861" data-ad-format="auto" data-ad-channel="3197453460" data-full-width-responsive="false"></ins></div>',(t.adsbygoogle=t.adsbygoogle||[]).push({}),c())}
+e.addEventListener("scroll",i,{once:!0}),setTimeout(i,3600)
+const o=new IntersectionObserver((function(t){t.forEach((function(t){if(t.isIntersecting){const e=t.target
+o.unobserve(e),i()}}))}))
+o.observe(r)}function d(n){const i=n.getBoundingClientRect()
+return i.top>=0&&i.top<=(t.innerHeight||e.documentElement.clientHeight)}const u=e.head||e.getElementsByTagName("head")[0]
+let p=0
+function f(n,i){const o=e.createElement("li")
+if(o.id=`rklm-${p}`,o.className="rklm",i){const t=Math.ceil((i+3*p)/3),n=Math.ceil((i+2*p)/2)
+!function(t){const n=e.createElement("style")
+n.textContent=t,u.appendChild(n)}(`\n\t\t\t\t#${o.id} {grid-row:${t} / ${t+1};}\n\t\t\t\t@media only screen and (max-width : 640px) {\n\t\t\t\t\t#${o.id}  {grid-row:${n} / ${n+1};}\n\t\t\t\t}\n\t\t\t`)}o.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9356627658540659" data-ad-slot="9383587861" data-ad-format="auto" data-ad-channel="8248143656" data-full-width-responsive="false"></ins>',n.appendChild(o),(t.adsbygoogle=t.adsbygoogle||[]).push({}),c(),p++}const g=e.querySelector(".flag-grid")
+if(g&&"none"!==g.style.display){const n=g.querySelectorAll("li")
+if(n.length<4)return
+const i=n[0]
+let o=null,s=0
+if(d(i)?n.forEach((function(t){o||(s++,d(t)||(o=t))})):function(n){const i=n.getBoundingClientRect()
+return i.top>=0&&i.top>=(t.innerHeight||e.documentElement.clientHeight)}(i)&&(o=i),o){let t=!1
+const i=e=>{t||(t=!0,f(g,s))}
+e.addEventListener("scroll",i,{once:!0}),setTimeout(i,3600)
+let c=0,a=null
+n.forEach((t=>{c++,t===o?a=0:null===a||!a++||a%30||(!function(t,e){const n=new IntersectionObserver((t=>{t.forEach((function(t){if(t.isIntersecting){const i=t.target
+n.unobserve(i),f(i.parentNode,e)}}))}))
+n.observe(t)}(o,c),o=t)}))}}}var q,M
+q=i=>{k(),function(){function t(t){return u("quiz-mini-"+t)}if(!t("image"))return
+const e=t("image"),i=t("counter"),c=t("correct"),a=t("wrong"),r=t("options"),l=t("result"),p=t("result-correct"),f=t("result-wrong"),g=t("result-wrong-name"),b=t("refresh")
+let w,L,$=[]
+function k(){if(!$.length){if($=o.slice(0),y($),$.length<3)return
+w=0,L=0,v(c,"0"),v(a,"0")}const u=E($.shift())
+let b,C,k,S=[u.o]
+for(b=0;b<2;b++){do{if(k=o[Math.floor(Math.random()*o.length)],u.c in s&&E(k).c in s[u.c])k=null
+else for(C=0;C<S.length;C++)S[C]==k&&(k=null)}while(!k)
+S.push(k)}for(y(S),b=0;b<3;b++)!function(t,e){v(t,e.n),t.parentNode.onclick=function(){e.c==u.c?(v(c,++w),h(p)):(v(a,++L),v(g,u.n),h(f)),h(l),m(r),N("quiz-mini-answer",u.c+"-"+e.c)}}(t("option-"+b),E(S[b]))
+e.firstChild&&e.removeChild(e.firstChild),e.appendChild(function(t){const e=n+"/h240/"+u.c+".",i=n+"/h120/"+u.c+".",o=function(t){const n=d("source")
+return n.type="image/"+t,n.srcset=e+t+" 2x, "+i+t+" 1x",n},s=d("img")
+s.src=i+"png",s.height="120",s.alt="?",t&&(s.loading="lazy")
+const c=d("picture")
+return c.appendChild(o("webp")),c.appendChild(o("png")),c.appendChild(s),c}(w+L==0)),v(i,(o.length-$.length).toString()+"."),h(r),m(l),m(p),m(f)}k(),C(b,(function(){k()}))}(),x(),function(n,i,o,s,c){const a=u("map-header")
+if(!a)return
+const r=u("map"),p=u("map-wrapper")
+let f=!1,g=function(){if(!f){t.innerWidth<=640&&(r.innerHTML='<div class="'+o+s+'-container"><div class="'+o+"top "+o+'right"><div class="'+o+s+"-zoom "+o+"bar "+o+s+'"><a id="map-close" class="'+o+s+'-zoom-in" href="#">×</a></div></div></div>',u("map-close").onclick=function(){return m(r),m(p),c.remove("map-open"),!1})
+const a=d("link")
+a.type="text/css",a.rel="stylesheet",a.href=i,e.head.appendChild(a),w(n),f=!0}}
+if(a.onclick=function(){h(p),h(r),c.add("map-open"),g()},t.innerWidth>640)if(h(r),l()){const t=new IntersectionObserver((function(e){e[0].isIntersecting&&(g(),t.unobserve(e[0].target))}),{})
+t.observe(p)}else g()}("/asset-markers.js?b7587737","/assets/package-leaflet.css?b7587737","leaflet-","control",e.body.classList),function(){const t="quiz-big-"
+function e(e){return u(t+e)}if(!e("image"))return
+function i(t,e,i){const o=n+"/"+(e=e||"w")+2*(i=i||320)+"/"+t.c+".",s=n+"/"+e+i+"/"+t.c+".",c=function(t){const e=d("source")
+return e.type="image/"+t,e.srcset=o+t+" 2x, "+s+t+" 1x",e},a=d("img")
+a.src=s+"png","w"===e?a.width=i:a.height=i,a.alt="?"
+const r=d("picture")
+return r.appendChild(c("webp")),r.appendChild(c("png")),r.appendChild(a),r}const c=e("bar"),a=e("bar-num"),r=e("game-wrapper"),l=e("again"),p=e("overlay"),f=e("image"),g=e("counter-correct"),b=e("counter-wrong"),w=e("correct"),L=e("wrong"),$=e("prev")
+let k,S,x=[],T={},q=[]
+if(C(l,(function(){r.classList.remove("is-end"),M()})),r.dataset.codes){const t=JSON.parse(r.dataset.codes)
+o.forEach((function(e){t.includes(E(e).c)&&x.push(e)}))}else x=o
+function M(t){if(!q.length){if(x.forEach((function(t,e){T[t]=e})),q=x.slice(0),y(q),q.length<12)return
+k=0,S=0,$.style.display="none",w.innerHTML="",L.innerHTML=""}const n=x.length-q.length+1
+c.style.width=(n-1)/(x.length-1)*100+"%",v(a,n)
+const o=E(q.shift())
+let l,u,C,A=[o.o]
+for(l=0;l<11;l++){do{if(C=x[Math.floor(Math.random()*x.length)],o.c in s&&E(C).c in s[o.c])C=null
+else for(u=0;u<A.length;u++)A[u]==C&&(C=null)}while(!C)
+A.push(C)}A.sort((function(t,e){return T[t]>T[e]?1:T[t]<T[e]?-1:0})),f.firstChild&&f.removeChild(f.firstChild),f.appendChild(t||i(o))
+const O=q[0]?i(E(q[0])):null
+let I=null,z=null
+for(l=0;l<12;l++)!function(t,e,n){v(e,n.n),t.classList.remove("true"),t.classList.remove("false"),t.disabled=!1,n.c==o.c&&(I=t),t.onclick=function(){t.blur(),t.disabled=!0,n.c==o.c?(z||k++,t.classList.add("true"),h(p),setTimeout((function(){const t=d("span")
+t.appendChild(i(o,"h",40))
+const e=d("div")
+v(e,o.n)
+const n=d("div")
+n.className="item",n.appendChild(t),n.appendChild(e)
+const s=z?L:w
+s.insertBefore(n,s.firstChild),v(g,k),v(b,S),$.style.display="flex",m(p),O?M(O):r.classList.add("is-end"),N("quiz-big-answer",o.c+"-"+(z?z.c:o.c))}),z?1250:375)):(z||(S++,z=n),t.classList.add("false"),h(p),setTimeout((function(){I.click()}),250))}}(e("option-"+l),e("option-text-"+l),E(A[l]))}M()}(),function(){const t=u("quiz")
+if(!t||!t.classList.contains("play"))return
+const e="quiz-play-"
+let n=1
+const i=u(e+"watch")
+setInterval((function(){v(i,n++)}),1e3)
+const o=t.querySelector('input[name="send"]')
+m(o)
+let s=1
+const c=u(e+"status"),a=t.querySelectorAll(".flag")
+a.forEach((function(t,e){e?m(t):h(t),t.querySelectorAll("input").forEach((function(e){e.classList.add("input-hide"),e.onchange=function(){m(t)
+const e=t.nextElementSibling
+e.classList.contains("flag")?h(e):(h(o),u("frm-quizForm").submit()),c.style.width=s++/a.length*100+"%"}}))}))}(),S(),e.querySelectorAll(".perex__more-toggler").forEach((t=>{t.addEventListener("click",(e=>{const n=t.closest(".perex__group").querySelector(".perex__more")
+if(n){const e=t.getBoundingClientRect().width
+n.hidden=!n.hidden,t.textContent=n.hidden?"more info":"less info",t.setAttribute("aria-expanded",n.hidden?"false":"true"),n.setAttribute("aria-hidden",n.hidden?"true":"false"),t.getBoundingClientRect().width<e&&(t.style.width=`${e}px`)}}))}))},"loading"!==e.readyState?q():e.addEventListener("DOMContentLoaded",q),M=n=>{t.envLocalhost||(setTimeout((function(){T()}),125),["cs","sk","pl"].includes(e.documentElement.lang)&&function(t,e){function n(e){const n=d("img")
+n.src="https://toplist."+e,n.width=1,n.height=1,n.alt="TOPlist",t.appendChild(n)}n("cz/dot.asp?id=716967"),n("sk/dot.asp?id=1062564"),t.className="hide",g(t)}(d("div")))},"complete"===e.readyState?M():t.addEventListener("load",M)}(window,document)

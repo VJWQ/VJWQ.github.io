@@ -41,7 +41,7 @@
                 <name><b>Wenqi Jia</b></name>
               </p>
               <heading>Hey! &#x1F60a</heading>
-              <p>I am a first-year PhD student in Computer Science at the 
+              <p>I am a second-year PhD student in Computer Science at the 
                 <a href="https://www.gatech.edu/">Georgia Institute of Technology (GaTech)</a>, working with 
                 <a href="https://rehg.org/">Prof. James Rehg</a> and co-advised by <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei Xu</a>. I received my B.Eng from the 
                 <a href="https://www.polyu.edu.hk/">Hong Kong Polytechnic University</a>, majoring in Electronic and Information Engineering. I was working in
@@ -83,14 +83,15 @@
             <section id="News" style="padding-top: 80px; margin-top: -80px;">
             <heading><b>News</b></heading>
             <p>
+              <b>12.2023</b>&nbsp&nbsp Check out my latest work <a href="https://vjwq.github.io/AV-CONV/">Audio-Visual Conversational Graph</a>! 🤹‍♀️<br>
               <b>01.2023</b>&nbsp&nbsp I'll be interning at <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a> in summer 2023! ♾️👩‍💻<br>
-              <b>10.2022</b>&nbsp&nbsp I attended ECCV 22 in person @ Tel-Aviv, Israel. Had so much fun in the Dead Sea! 🌊<br>
-              <b>10.2022</b>&nbsp&nbsp I give a poster presentation at <a href="https://sites.google.com/view/egocentric-hand-body-activity">HBHA@ECCV22 workshop</a>, thanks for having me! 😊<br>
+              <!-- <b>10.2022</b>&nbsp&nbsp I attended ECCV 22 in person @ Tel-Aviv, Israel. Had so much fun in the Dead Sea! 🌊<br> -->
+              <!-- <b>10.2022</b>&nbsp&nbsp I give a poster presentation at <a href="https://sites.google.com/view/egocentric-hand-body-activity">HBHA@ECCV22 workshop</a>, thanks for having me! 😊<br>
               <b>10.2022</b>&nbsp&nbsp I give a poster presentation at <a href="https://sites.google.com/view/hands2022/home?authuser=0">HANDS@ECCV22 workshop</a>, thanks for having me! 🤓<br>
-              <b>09.2022</b>&nbsp&nbsp I give a poster presentation at <a href="https://ego4d-data.org/workshops/eccv22/">2nd International Ego4D Workshop@ECCV 2022</a>, thanks for having me! 🫡<br>
+              <b>09.2022</b>&nbsp&nbsp I give a poster presentation at <a href="https://ego4d-data.org/workshops/eccv22/">2nd International Ego4D Workshop@ECCV 2022</a>, thanks for having me! 🫡<br> -->
               <b>08.2022</b>&nbsp&nbsp One journal paper accepted by TNNLS! 🎉<br>
               <b>07.2022</b>&nbsp&nbsp One paper accepted by ECCV '22 Hi Israel!! 🎉✡️<br>
-              <b>06.2022</b>&nbsp&nbsp I attended CVPR 22 in person and got covid 😕 <br>
+              <!-- <b>06.2022</b>&nbsp&nbsp I attended CVPR 22 in person and got covid 😕 <br> -->
               <b>04.2022</b>&nbsp&nbsp I've accepted my CS PhD offer at Georgia Tech! 🐝🐝🐝 <br>
               <b>04.2022</b>&nbsp&nbsp Our <a href="https://ego4d-data.org/docs/challenge/">Ego4D challenges</a> are alive now! Come join us on the leaderboard! 🏆🚩<br>
               <b>03.2022</b>&nbsp&nbsp Our <a href="https://ego4d-data.org/">Ego4D</a> paper has been accepted by CVPR '22 and selected for an oral presentation! 🥂<br>
@@ -115,6 +116,60 @@
               <heading><b>Publications</b></heading>
             </td>
           </tr>      
+          <tr onmouseout="avconv_stop()" onmouseover="avconv_start()">
+            <td style="padding:25px;width:35%;vertical-align:middle;display:inline-block;">
+  
+              <div class="one">
+                <div class="two" id='avconv'>
+                  <video muted autoplay loop style="width:200%;vertical-align:middle;">
+                    <source src="imgs/1035_slow.mp4" type="video/mp4">
+                  </video>
+                  <video muted autoplay loop style="width:200%;vertical-align:middle;">
+                    <source src="imgs/825_slow.mp4" type="video/mp4">
+                  </video>
+                  </div>
+                  <img src='imgs/avconv.png'width="130%" class="center">
+                </div>
+                <script type="text/javascript">
+                  function avconv_start() {
+                    document.getElementById('avconv').style.opacity = "1";
+                  }
+  
+                  function avconv_stop() {
+                    document.getElementById('avconv').style.opacity = "0";
+                  }
+                  avconv_stop()
+                </script>
+            </td>
+            <td style="padding:20px;width:65%;vertical-align:middle">
+              <a href="TODO">
+                <papertitle>The Audio-Visual Conversational Graph: From an Egocentric-Exocentric Perspective</papertitle>
+              </a>
+              <br>
+              <strong>Wenqi Jia</strong>,
+              <a href="https://aptx4869lm.github.io/">Miao Liu</a>,
+              <a href="https://www.hao-jiang.net/">Hao Jiang</a>,
+              <a href="https://www.ishwarya.me/">Ishwarya Ananthabhotla</a>,
+              <a href="https://rehg.org/">James Rehg<sup>&dagger;</sup></a>,<br>
+              <a href="https://www.vamsiithapu.com/">Vamsi Krishna Ithapu<sup>&dagger;</sup></a>,
+              <a href="https://ruohangao.github.io/">Ruohan Gao<sup>&dagger;</sup></a>
+              <br>
+              <em>(under review)</em> 
+              <br>
+              <a href="https://vjwq.github.io/AV-CONV/">project</a> /
+              <a href="TODO">arXiv </a> /
+              <a><font color="#ABB0B8">code</font></a> /
+              <a><font color="#ABB0B8">dataset</font></a> /
+              <!-- <a href="TODO">paper </a> / -->
+              <a href="TODO">bibtex</a>
+              <p><font color="#009A17"><em>(&#8656 Move your cursor on the image for a short demo video!)</em></font></p>
+              <br>
+              <p></p>
+              <p>
+              </p>
+            </td>
+          </tr>  
+
           <tr onmouseout="uflow_stop()" onmouseover="uflow_start()">
             <td style="padding:25px;width:35%;vertical-align:middle;display:inline-block;">
   
@@ -405,7 +460,7 @@
                 <heading><b>Academic Service and Honor</b></heading>
                 <ul>
                   <!-- <li><b>Talk</b> 🎤, HANDS@ECCV22 workshop, 2nd International Ego4D Workshop@ECCV 2022</li> -->
-                  <li><b>Reviewer</b> 🔎, CVPR '22, '23, ECCV '22 </li>
+                  <li><b>Reviewer</b> 🔎, CVPR '22, '23, '24, ECCV '22 </li>
                   <!-- <li><b>Reviewer</b>, </li> -->
                   <li><b>First Runner Up</b> 🥈, IEEE Video and Image Processing Cup (VIP Cup) 2017</li>
                 </ul>
@@ -492,6 +547,7 @@
                 <img src="country/es.png" width="30" height="30" style="float:left">
                 <img src="country/il.png" width="30" height="30" style="float:left">
                 <img src="country/qa.png" width="30" height="30" style="float:left">
+                <img src="country/ca.png" width="30" height="30" style="float:left">
               </p><br><br> 
               <li>I'm <b>Chinese</b> and if you wonder what's the correct pronunciation of my name (with the tones!), try to say the brand "<a href="https://www.google.com/search?q=givenchy+pronunciation+in+british+english">Givenchy</a>"in British accent 🤣</li>
               <li>I play the <b>piano</b> 🎹 & very into classical music</li>
